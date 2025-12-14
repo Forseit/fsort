@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssorted"
+name = "fsort"
 version = "0.1.0"
 description = "Safe+Fast drop-in replacement for sorted(): fsort()"
 requires-python = ">=3.9"
