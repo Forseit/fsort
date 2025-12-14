@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssorted"
+version = "0.1.0"
+description = "Safe+Fast drop-in replacement for sorted(): fsort()"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "Danil"}]
+keywords = ["sorting", "sorted", "numpy", "timsort"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.23"]
+test = ["pytest>=8.0"]
+dev = ["pytest>=8.0", "build>=1.2", "twine>=5.0", "ruff>=0.6"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
