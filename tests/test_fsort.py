@@ -1,5 +1,5 @@
 import random
-from ssorted import fsort
+from fsort import fsort
 
 
 class Obj:
