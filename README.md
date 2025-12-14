@@ -9,13 +9,13 @@ What it does
 3) If elements are not mutually comparable, it falls back to a safe deterministic order.
 
 Install from GitHub
-pip install git+https://github.com/YOURNAME/ssorted.git
+pip install git+https://github.com/Forseit/fsort.git
 
 Install from GitHub with NumPy acceleration
-pip install "ssorted[numpy] @ git+https://github.com/YOURNAME/ssorted.git"
+pip install "fsort[numpy] @ git+https://github.com/Forseit/fsort.git"
 
 Usage
-from ssorted import fsort
+from fsort import fsort
 
 print(fsort([3, 1, 2]))
 print(fsort([3, 1, 2], reverse=True))
